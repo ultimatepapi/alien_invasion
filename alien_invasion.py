@@ -144,7 +144,7 @@ class AlienInvasion:
             self.scoreboard.increase_lvl()
     
     def _check_bullet_collisions(self):
-        collisions=pygame.sprite.groupcollide(self.bullets,self.aliens,False,
+        collisions=pygame.sprite.groupcollide(self.bullets,self.aliens,True,
                                               True)
         if collisions:
             for aliens in collisions.values():
